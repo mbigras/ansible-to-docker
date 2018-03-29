@@ -7,6 +7,10 @@
 ```
 docker run -itd --name foobar centos:7
 ansible -i foobar, -c docker -m ping all
+foobar | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
 ```
 
 ## Playbook
